@@ -9,11 +9,11 @@ from botocore.exceptions import NoCredentialsError
 import logging
 
 
-# BUCKET_NAME = 'apthai-stgbucket0'
-# PROFILE_NAME = 'myaws2'
+BUCKET_NAME = 'apthai-stgbucket0'
+PROFILE_NAME = 'myaws2'
 
-BUCKET_NAME = 'apthai-stgbucket'
-PROFILE_NAME = 'mdm'
+# BUCKET_NAME = 'apthai-stgbucket'
+# PROFILE_NAME = 'mdm'
 
 
 def upload_to_aws(local_file, bucket, s3_file):
