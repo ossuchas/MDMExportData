@@ -1,12 +1,12 @@
+import logging
+import sys
+from datetime import datetime
 from sqlalchemy import create_engine
 import urllib
 import sqlalchemy
 import pandas as pd
-import sys
-from datetime import datetime
 import boto3.session
 from botocore.exceptions import NoCredentialsError
-import logging
 
 
 # BUCKET_NAME = 'apthai-stgbucket0'
