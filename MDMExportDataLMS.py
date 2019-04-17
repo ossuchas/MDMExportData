@@ -46,7 +46,7 @@ def main():
     
     str_sql = """
         SELECT SelectColumn + ' ' + FromColumn + ' ' +  WhereColumn + ' ' + ISNULL(ConditionColumn,'') as SQLStatement, 
-                FileName, FileType
+                FileName, FileType, FilePath
         FROM dbo.MST_MDMTableList
         WHERE System = '{}'
         AND TableName = '{}'
@@ -59,6 +59,7 @@ def main():
     date_fmt = datetime.now().strftime("%Y%m%dT%H%M%S-01")
     file_name = df.iat[0, 1]
     file_type = df.iat[0, 2]
+    file_path = df.iat[0, 3]
     full_file_name = "/home/ubuntu/myPython/mdm/csvfile/{}{}{}".format(file_name, date_fmt, file_type)
     logging.info("File Name => {}".format(full_file_name))
     
@@ -71,7 +72,8 @@ def main():
     logging.info("<<<After Read SQL to CSV File>>>")
     
     # Upload file to AWS S3    
-    s3_file = 'Landing/LMS/{}{}{}'.format(file_name, date_fmt, file_type)
+    s3_file = '{}{}{}{}'.format(file_path, file_name, date_fmt, file_type)
+    logging.info("s3_file Destination Full Path => {}".format(s3_file))
     
     uploaded = upload_to_aws(full_file_name, BUCKET_NAME, s3_file)
 
