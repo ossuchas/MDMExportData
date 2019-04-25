@@ -4,8 +4,8 @@ from botocore.exceptions import NoCredentialsError
 import sys
 
 
-BUCKET_NAME = 'apthai-stgbucket0'
-# BUCKET_NAME = 'apthai-stgbucket'
+# BUCKET_NAME = 'apthai-stgbucket0'
+BUCKET_NAME = 'apthai-stgbucket'
 
 
 def upload_to_aws(local_file, bucket, s3_file):
@@ -80,10 +80,12 @@ def main():
     print(s3_path)
 
     local_file = 'hello.txt'
-    s3_file = 'Landing/CRM1-2/hello.txt'
+    #s3_file = 'Landing/CRM1-2/hello.txt'
+    s3_file = 'Landing/BC/Book/hello.txt'
     # s3_file = 'Landing/CRM1-2/ActivityLead/hello.txt'
     
     # uploaded = upload_to_aws(local_file, BUCKET_NAME, s3_file)
+    uploaded = upload_to_aws_mdm(local_file, BUCKET_NAME, s3_file)
     # list_file_aws_mdm(BUCKET_NAME, 'Landing/CRM1-2/Booking')
     # list_file_aws_mdm(BUCKET_NAME, 'Landing/CRM1-2')
     # list_file_aws_mdm(BUCKET_NAME, 'Landing/LMS')
