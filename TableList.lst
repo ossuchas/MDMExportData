@@ -1,0 +1,104 @@
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Activity 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Activity 2 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Leads 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Opportunities 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Agreement 1  >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_AgreementOwner 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Booking 1 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_BookingOwner 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Contacts 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_ManageModel 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Products 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Transfer 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_TransferOwner 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Unit 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_Payment_PaymentDetails 1 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_Payment_PaymentDetails 2 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM Users 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_Promotion 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_PromotionDetail 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_PromotionProject 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionDetail 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionDetail 2 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionFee 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionFee 2 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_TransferPromotion 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_TransferPromotionDetail 1 5 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_TransferPromotionFee 1 >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataLMS.py >/dev/null 2>&1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataEQN.py 20190404 20190405 >/dev/null 2>&1
+
+------------------------------------------------------------------------------
+Table List
+------------------------------------------------------------------------------
+CRM_Activity
+CRM_Leads
+CRM_Opportunities
+ICON_EntForms_Transfer
+ICON_EntForms_Agreement
+ICON_EntForms_AgreementOwner
+ICON_EntForms_Booking
+ICON_EntForms_BookingOwner
+ICON_EntForms_Contacts
+ICON_EntForms_ManageModel
+ICON_EntForms_Products
+ICON_EntForms_TransferOwner
+ICON_EntForms_Unit
+ICON_Payment_PaymentDetails
+Users
+ZPROM_Promotion
+ZPROM_PromotionDetail
+ZPROM_PromotionProject
+ZPROM_SalePromotionDetail
+ZPROM_SalePromotionFee
+ZPROM_TransferPromotion
+ZPROM_TransferPromotionDetail
+ZPROM_TransferPromotionFee
+
+------------------------------------------------------------------------------
+Crontab
+------------------------------------------------------------------------------
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Activity 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Activity 2 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Leads 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM CRM_Opportunities 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Agreement 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_AgreementOwner 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Booking 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_BookingOwner 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Contacts 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_ManageModel 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Products 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Transfer 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_TransferOwner 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_EntForms_Unit 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_Payment_PaymentDetails 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ICON_Payment_PaymentDetails 2 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM Users 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_Promotion 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_PromotionDetail 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_PromotionProject 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionDetail 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionDetail 2 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionFee 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_SalePromotionFee 2 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_TransferPromotion 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_TransferPromotionDetail 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportData.py CRM ZPROM_TransferPromotionFee 1 >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportDataLMS.py >/dev/null 2>&1
+0 1 * * * python3 /home/ubuntu/myPython/mdm/MDMExportDataEQN.py 20190101 20190331 >/dev/null 2>&1
+
+
+-----------------------------------------------------------------
+BC
+-----------------------------------------------------------------
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC customer 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC corporate 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC project 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC property 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC property_transaction_transfer 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC enquiry_transaction 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC match 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC touring_enquiries 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC touring_enquiry_properties 1
+python3 /home/ubuntu/myPython/mdm/MDMExportDataBC.py BC book 1
