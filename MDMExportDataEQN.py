@@ -90,7 +90,7 @@ def main():
                                                     @IncludeInActiveProject = 0, 
                                                     @UserID = 0,
                                                     @PivotFlag = 'Y'
-    """.format(start_date, end_date)
+    """.format(previous_date, previous_date)
 
     # Setup Format File Name CSV
     # date_fmt = datetime.now().strftime("%Y%m%d")
